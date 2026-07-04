@@ -68,10 +68,8 @@ table {
 body {
     font-family: var(--font-body);
     color: var(--dark-charcoal);
-    background-color: var(--soft-white);
+    background-color: var(--midnight-blue);
     line-height: 1.6;
-    margin: 0 auto;
-    max-width: 95%;
 }
 
 header {
@@ -81,16 +79,32 @@ header {
     padding: 2rem 1rem;
 }
 
-nav ul {
+header p {
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+header ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     background-color: var(--champagne-gold);
-    padding: 1rem;
+    padding: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark-charcoal);
+    font-weight: bold;
 }
 
 main {
-    padding: 2rem 1rem;
+    margin: 0 auto;
+    background-color: var(--soft-white);
 }
 
 section {
@@ -108,8 +122,7 @@ section {
     color: var(--soft-white);
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #offerings h3 {
@@ -160,9 +173,16 @@ section {
 
 footer {
     background-color: var(--midnight-blue);
-    color: var(--champagne-gold);
+    color: var(--soft-white);
     text-align: center;
     padding: 2rem 1rem;
+}
+
+footer a {
+    color: var(--champagne-gold);
+    background-color: var(--midnight-blue);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* MEDIA QUERY (medium) */
