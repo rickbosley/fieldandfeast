@@ -68,8 +68,14 @@ table {
 body {
     font-family: var(--font-body);
     color: var(--dark-charcoal);
-    background-color: var(--midnight-blue);
-    line-height: 1.6;
+    background-color: var(--linen);
+    line-height: 1.5em;
+}
+
+main, section, footer { 
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 1.5em;
 }
 
 header {
@@ -81,16 +87,20 @@ header {
 
 header p {
     font-style: italic;
-    padding-bottom: 1rem;
+    font-family: 1.2em;
+    margin-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 h1 {
     font-weight: bold;
+    font-size: 3em;
 }
 
 header ul {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     gap: 0.5rem;
     background-color: var(--champagne-gold);
     padding: 0.5rem;
@@ -103,8 +113,8 @@ nav a {
 }
 
 main {
-    margin: 0 auto;
-    background-color: var(--soft-white);
+    margin-top: 2em;
+    background-color: var(--linen);
 }
 
 section {
@@ -112,15 +122,16 @@ section {
 }
 
 #offerings {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 #offerings article {
     background-color: var(--olive-green);
     color: var(--soft-white);
-    padding: 1.5rem;
+    box-shadow: 0 .1em .2em  var(--dark-charcoal);
+    padding-bottom: .75rem;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
@@ -134,7 +145,7 @@ section {
 
 #offerings p, #offerings ul {
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.5;
 }
 
